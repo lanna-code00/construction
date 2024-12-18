@@ -46,7 +46,7 @@ export default defineComponent({
                 <div class="flex items-center justify-between px-4 h-16">
 
                     <div class="text-black font-bold text-2xl">
-                        MARTINS
+                        J.MARTINS
                     </div>
 
                     <div class="items-center space-x-12 hidden lg:flex">
@@ -65,8 +65,8 @@ export default defineComponent({
                     
                     </div>
 
-                    <RouterLink to="/" class="text-black hidden lg:flex bg-white px-4 py-2 rounded-full">
-                        Contact us
+                    <RouterLink to="/" class= "text-black hidden lg:flex px-4 py-2 rounded-full bg-[#27e08f]">
+                        Buy from us
                     </RouterLink>
 
                     <div class="lg:hidden" @click="toggleMenu">
@@ -105,8 +105,8 @@ export default defineComponent({
                         {{ menu.name }}
                         </RouterLink>
 
-                        <RouterLink to="/" class="text-black hover:text-gray-400 rounded-full px-5" @click="toggleMenu">
-                            Contact us
+                        <RouterLink to="/" class="text-black divide-y divide-teal-400 hover:text-gray-400 rounded-full px-5" @click="toggleMenu">
+                            Buy from us
                         </RouterLink>
 
                         </div>

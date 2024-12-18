@@ -1,6 +1,12 @@
 <template>
     <div class="w-full pt-36 lg:pt-0">
        <Hero/>
+       <product/>
+       <Why/>
+       <About/>
+       <Testimonial/>
+       <CallToAction/>
+       <Contact/>
     </div>
   </template>
   
@@ -11,13 +17,25 @@
   import "swiper/css/navigation";
   import "swiper/css/pagination";
   import Hero from "./Hero.vue";
+  import Product from "./Products/product.vue";
+  import Why from "./Why/index.vue";
+  import Testimonial from "./Testimonial/index.vue";
+  import About from "./About/about.vue";
+  import Contact from "./Contact/index.vue";
+  import CallToAction from "./CallToAction/index.vue";
   import { EffectFade, Autoplay } from "swiper/modules";
   
   export default {
     components: {
       Swiper,
       Hero,
+      Why,
+      Product,
       SwiperSlide,
+      About,
+      CallToAction,
+      Testimonial,
+      Contact
     },
     setup() {
       return {

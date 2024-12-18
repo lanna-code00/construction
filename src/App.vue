@@ -1,5 +1,6 @@
 <script setup>
 import Navigation from "./components/Navigation/index.vue";
+import Footer from "./components/Footer/index.vue"
 </script>
 
 <template>
@@ -10,6 +11,6 @@ import Navigation from "./components/Navigation/index.vue";
   <main>
     <RouterView/>
   </main>
-
+<Footer/>
 </template>
 
