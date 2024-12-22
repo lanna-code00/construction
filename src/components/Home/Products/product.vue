@@ -35,20 +35,20 @@
             class="w-full h-48 object-cover"
           />
           <!-- Overlay appears only on hover -->
-          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-          <div
-          class="absolute bottom-0 left-0 w-full p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <h2 class="text-lg font-bold leading-tight">
-            {{ image.title }}
-          </h2>
-          <p class="text-[#27e08f]">₦ {{image.price}}</p>
-        </div>
-        <div
-          class="absolute inset-0 flex justify-center items-center cursor-pointer"
-        >
-          <AkEyeOpen  @click="openModal(image.src)" class="fas fa-eye text-white text-3xl"/>
-        </div>
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div
+              class="absolute bottom-0 left-0 w-full p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <h2 class="text-lg font-bold leading-tight">
+                {{ image.title }}
+              </h2>
+              <p class="text-[#27e08f]">₦ {{image.price}}</p>
+            </div>
+            <div
+              class="absolute inset-0 flex justify-center items-center cursor-pointer"
+            >
+              <AkEyeOpen  @click="openModal(image.src)" class="fas fa-eye text-white text-3xl"/>
+            </div>
         </swiper-slide>
       </swiper>
 
@@ -129,7 +129,7 @@
     };
   </script>
   
-  <style>
+  <style scoped>
 /* Hover effect */
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
