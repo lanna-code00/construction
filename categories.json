@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "category": "Rods",
+    "slug": "rods"
+  },
+
+  {
+    "id": 2,
+    "category": "Designed Plates",
+    "slug": "designed_plates"
+  },
+  {
+    "id": 3,
+    "category": "Galvanize",
+    "slug": "galvanize"
+  },
+  {
+    "id": 4,
+    "category": "Pipes",
+    "slug": "pipes"
+  },
+  {
+    "id": 5,
+    "category": "Plates",
+    "slug": "plates"
+  },
+  {
+    "id": 6,
+    "category": "Keys",
+    "slug": "keys"
+  }
+]
