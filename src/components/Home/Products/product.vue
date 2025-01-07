@@ -1,135 +1,136 @@
 <template>
-    <div class="pt-20">
-        <div class="text-center mb-16">
-            <p class="lg:text-5xl text-xl font-black mb-4 text-[#27e08f]">Featured Products</p>
-            <p class="tracking-wider font-bold uppercase">Check out our premium quality iron rods designed to strengthen your projects and make them stand the test of time. </p>
-        </div>
-        <swiper
-        :modules="modules"
-        :space-between="20"
-        :breakpoints="{
-            640: {
-                slidesPerView: 1, 
-            },
-            768: {
-                slidesPerView: 2.5
-            },
-            1024: {
-                slidesPerView: 3.9 
-            },
-            1280: {
-                slidesPerView: 4 
-            }
-        }"
-        navigation
-        class="mySwiper"
+  <div class="pt-20">
+    <div class="text-center mb-16">
+      <p class="lg:text-4xl text-xl font-bold mb-4 text-black">
+        Featured Products
+      </p>
+      <p class="tracking-wider font-medium">
+        Check out our premium quality iron rods designed to strengthen your
+        projects and make them stand the test of time.
+      </p>
+    </div>
+    <swiper
+      :modules="modules"
+      :space-between="20"
+      :breakpoints="{
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2.5,
+        },
+        1024: {
+          slidesPerView: 3.9,
+        },
+        1280: {
+          slidesPerView: 4,
+        },
+      }"
+      navigation
+      class="mySwiper"
+    >
+      <swiper-slide
+        v-for="(product, index) in products"
+        :key="index"
+        class="relative rounded-lg overflow-hidden shadow-2xl group"
       >
-        <swiper-slide
-          v-for="(image, index) in images"
-          :key="index"
-          class="relative rounded-lg overflow-hidden shadow-2xl group"
+        <img
+          :src="product.image"
+          :alt="product.name"
+          class="w-full h-48 object-cover"
+        />
+        <!-- Overlay appears only on hover -->
+        <div
+          class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-full p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
         >
-          <img
-            :src="image.src"
-            :alt="image.alt"
-            class="w-full h-48 object-cover"
+          <h2 class="text-lg font-bold leading-tight">
+            {{ product.name }}
+          </h2>
+          <p class="text-[#FFEF00]">₦ {{ product.price }}</p>
+        </div>
+        <div
+          class="absolute inset-0 flex justify-center items-center cursor-pointer"
+        >
+          <AkEyeOpen
+            @click="openModal(product.image)"
+            class="fas fa-eye text-white text-3xl"
           />
-          <!-- Overlay appears only on hover -->
-            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div
-              class="absolute bottom-0 left-0 w-full p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity"
-            >
-              <h2 class="text-lg font-bold leading-tight">
-                {{ image.title }}
-              </h2>
-              <p class="text-[#27e08f]">₦ {{image.price}}</p>
-            </div>
-            <div
-              class="absolute inset-0 flex justify-center items-center cursor-pointer"
-            >
-              <AkEyeOpen  @click="openModal(image.src)" class="fas fa-eye text-white text-3xl"/>
-            </div>
-        </swiper-slide>
-      </swiper>
+        </div>
+      </swiper-slide>
+    </swiper>
 
-
-          <!-- Modal to display large image -->
+    <!-- Modal to display large image -->
     <div
-    v-if="showModal"
-    class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
-    @click="closeModal"
-  >
-    <div class="relative max-w-4xl mx-auto">
-      <img :src="modalImage" class="w-full h-auto rounded-lg shadow-lg" />
-      <button
-        @click="closeModal"
-        class="absolute top-2 right-2 text-white text-3xl"
-      >
-        &times;
-      </button>
+      v-if="showModal"
+      class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+      @click="closeModal"
+    >
+      <div class="relative max-w-4xl mx-auto">
+        <img :src="modalImage" class="w-full h-auto rounded-lg shadow-lg" />
+        <button
+          @click="closeModal"
+          class="absolute top-2 right-2 text-white text-3xl"
+        >
+          &times;
+        </button>
+      </div>
     </div>
   </div>
-   
-    </div>
-  </template>
-  
-  <script>
-    import { Swiper, SwiperSlide } from "swiper/vue";
-    import "swiper/css";
-    import "swiper/css/navigation";
-    import { Navigation } from "swiper/modules";
-    import { AkEyeOpen } from '@kalimahapps/vue-icons';
-    import { ref } from "vue";
+</template>
 
-    export default {
-      components: {
-        Swiper,
-        AkEyeOpen,
-        SwiperSlide,
-      },
-      setup() {
-        const images = [
-          { src: "/files/rod_6.jpg", alt: "Rod 6", title: "Rod, 8mm", price: "10,000" },
-          { src: "/files/rod_7.jpg", alt: "Rod 7", title: "Rod, 12mm", price: "12,300" },
-          { src: "/files/rods_2.jpg", alt: "Rods 2", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/rod_9.jpg", alt: "Rod 9", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/rod_8.jpg", alt: "Rod 10", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/rods_1.jpg", alt: "Rod 11", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/rods_3.jpg", alt: "Rod 12", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/rods_4.jpg", alt: "Rod 13", title: "Rod, 10mm", price: "12,300" },
-          { src: "/files/steel_pipe3.jpg", alt: "Rod 14", title: "Pipe, 10mm", price: "12,300" },
-          { src: "/files/steel_pipe.jpg", alt: "Rod 15", title: "Pipe, 12mm", price: "12,300" },
-        ];
+<script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { AkEyeOpen } from "@kalimahapps/vue-icons";
+import { onMounted, ref } from "vue";
 
-        const showModal = ref(false);
-        const modalImage = ref("");
+export default {
+  components: {
+    Swiper,
+    AkEyeOpen,
+    SwiperSlide,
+  },
+  setup() {
+    const products = ref([]);
 
-        // Function to open modal
-        const openModal = (imageSrc) => {
-        modalImage.value = imageSrc;
-        showModal.value = true;
-        };
+    onMounted(async () => {
+      const response = await fetch("/products.json");
+      const allProducts = await response.json();
+      products.value = allProducts;
+    });
+    const showModal = ref(false);
+    const modalImage = ref("");
 
-        // Function to close modal
-        const closeModal = () => {
-        showModal.value = false;
-        modalImage.value = "";
-        };
-
-        return {
-        images,
-        modules: [Navigation],
-        showModal,
-        modalImage,
-        openModal,
-        closeModal,
-        };
-  
-      },
+    // Function to open modal
+    const openModal = (imageSrc) => {
+      modalImage.value = imageSrc;
+      showModal.value = true;
     };
-  </script>
-  
-  <style scoped>
+
+    // Function to close modal
+    const closeModal = () => {
+      showModal.value = false;
+      modalImage.value = "";
+    };
+
+    return {
+      products,
+      modules: [Navigation],
+      showModal,
+      modalImage,
+      openModal,
+      closeModal,
+    };
+  },
+};
+</script>
+
+<style scoped>
 /* Hover effect */
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;

@@ -68,11 +68,12 @@
             </p>
             <div class="flex flex-wrap justify-center gap-6">
               <a
-                href="#"
-                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-[#27e08f] before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                href="https://wa.me/2348106714056?text=Hello Martins,%20I%20wan%20to%20buy..."
+                target="_blank"
+                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-[#FFEF00] before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
               >
                 <span
-                  class="relative text-base font-semibold text-white dark:text-dark"
+                  class="relative text-base font-semibold text-black dark:text-dark"
                   >Chat us</span
                 >
               </a>

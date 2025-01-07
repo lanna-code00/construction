@@ -29,5 +29,10 @@
     "id": 6,
     "category": "Keys",
     "slug": "keys"
+  },
+  {
+    "id": 7,
+    "category": "Other Tools",
+    "slug": "other-tools"
   }
 ]

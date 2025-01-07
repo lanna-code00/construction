@@ -19,11 +19,11 @@
           </div>
           <div class="sm:w-1/2 p-5">
             <div class="text">
-              <span class="text-gray-500 border-b-2 border-[#27e08f] uppercase"
+              <span class="text-gray-500 border-b-2 border-black uppercase"
                 >About us</span
               >
-              <h2 class="my-4 font-bold text-3xl sm:text-4xl">
-                About <span class="text-[#27e08f]">J.Martins</span>
+              <h2 class="my-4 font-bold text-4xl sm:text-4xl">
+                About <span class="text-gray-600">J.Martins</span>
               </h2>
               <div class="text-gray-700">
                 J.Martins na the brain behind this company, and e don dey inside
@@ -55,8 +55,7 @@
 
         <div class="lg:mx-10 mx-6 pt-16">
           <div class="text">
-            <span
-              class="text-black border-b-2 border-[#27e08f] uppercase font-bold"
+            <span class="text-black border-b-2 border-black uppercase font-bold"
               >More about us...</span
             >
           </div>

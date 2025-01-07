@@ -4,7 +4,7 @@
       <div
         class="container mx-auto text-center px-4 flex flex-col items-center"
       >
-        <h1 class="text-3xl font-bold mb-1 text-[#27e08f]">About Us</h1>
+        <h1 class="text-4xl font-bold mb-1 text-black">About Us</h1>
         <p class="font-bold mb-5 text-sm"><i>Building Trust Since 2013</i></p>
         <p class="text-center w-3/4">
           Since we start this business for 11 years, our mission na to give
@@ -16,9 +16,7 @@
           quality, and peace of mind.
         </p>
 
-        <h1 class="text-3xl font-bold mb-4 pt-5 text-[#27e08f]">
-          Our commitment
-        </h1>
+        <h1 class="text-4xl font-bold mb-4 pt-5 text-black">Our commitment</h1>
         <p class="text-center w-3/4">
           Our goal na to make sure every customer dey satisfied. Whether you be
           contractor or DIY builder, we dey here to support you from start to

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "8mm MAK",
+    "category_id": 1,
+    "price": "₦5,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956936/jmartins/8mm_TMT_iwqeir.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "10mm MAK",
+    "category_id": 1,
+    "price": "₦8,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956901/jmartins/10mm_mak_xglgzy.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "12mm MAK",
+    "category_id": 1,
+    "price": "₦9,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956899/jmartins/12mm_mak_i7oymq.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "10mm Square Rod",
+    "category_id": 1,
+    "price": "₦20,000",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956900/jmartins/10mm_square_rod_eza8ts.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "16mm MAK",
+    "category_id": 1,
+    "price": "₦12,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956907/jmartins/16mm_mak_xsr1pj.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "12mm Full Length (TMT)",
+    "category_id": 1,
+    "price": "₦12,000",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956907/jmartins/12mm_TMT_flu1zv.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Quarter Rod",
+    "category_id": 1,
+    "price": "₦2,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956919/jmartins/quarter_rod_urlij0.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Three Quarter Flatbar",
+    "category_id": 1,
+    "price": "₦3,000",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956930/jmartins/three_quarter_flatbar_rutfp4.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "2x2 square pipe",
+    "category_id": 4,
+    "price": "₦4,800",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956931/jmartins/two_by_two_sq_pipe_bt_mwrfno.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Two and half Galvanize pipe",
+    "category_id": 3,
+    "price": "₦5,800",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956933/jmartins/two_n_half_galvanize_pipe_vleh2b.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Three and Inch half square pipe",
+    "category_id": 4,
+    "price": "₦9,200",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956927/jmartins/three_n_inch_half_sq_pipe_z1yxtq.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "1x1 black thick square pipe",
+    "category_id": 4,
+    "price": "₦3,500",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956929/jmartins/one_by_one_black_thick_bk9sp7.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Three and Inch half square pipe (China)",
+    "category_id": 4,
+    "price": "₦5,700",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956929/jmartins/three_by_inch_half_black_china_pipe_nbyrd2.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "Inch and half square pipe (Thick)",
+    "category_id": 4,
+    "price": "₦6000",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956915/jmartins/inch_n_half_black_thick_pipe_nepcio.png",
+    "description": ""
+  },
+  {
+    "id": 1,
+    "name": "0.7 plate (Thick)",
+    "category_id": 5,
+    "price": "₦6000",
+    "image": "https://res.cloudinary.com/dfl33mmch/image/upload/v1735956934/jmartins/zero_seven_plate_thick_xaohg2.png",
+    "description": ""
+  }
+]
