@@ -15,11 +15,8 @@ onMounted(() => {
 
 <template>
   <!-- Global Loader -->
-  <div
-    v-if="loading"
-    class="fixed inset-0 flex items-center justify-center bg-white z-50"
-  >
-    <h1 class="text-4xl font-bold text-[#FFEF00] fade-text">J.MARTINS</h1>
+  <div v-if="loading" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+    <h1 class="text-4xl font-bold text-black fade-text">J.MARTINS</h1>
   </div>
 
   <!-- Main App Content -->
@@ -35,16 +32,21 @@ onMounted(() => {
 <style>
 /* Loader animation */
 .fade-text {
-  animation: fade 1.5s ease-in-out infinite; /* Infinite fade-in and fade-out animation */
+  animation: fade 1.5s ease-in-out infinite;
+  /* Infinite fade-in and fade-out animation */
 }
 
 @keyframes fade {
+
   0%,
   100% {
-    opacity: 0; /* Fully transparent at start and end */
+    opacity: 0;
+    /* Fully transparent at start and end */
   }
+
   50% {
-    opacity: 1; /* Fully visible at 50% of the animation */
+    opacity: 1;
+    /* Fully visible at 50% of the animation */
   }
 }
 
